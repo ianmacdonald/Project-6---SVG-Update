@@ -1,0 +1,23 @@
+
+// Nav Bar SVG animations
+
+// Heart
+.nav-items:hover {
+	#heart {
+		@extend %grow;
+	}
+}
+
+// Location
+.nav-items:hover {
+	#location {
+		@extend %grow;
+	}
+}
+
+// Contact
+.nav-items:hover {
+	#contact {
+		@extend %grow;
+	}
+}

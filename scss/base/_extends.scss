@@ -1,0 +1,15 @@
+
+// Nav Placeholders
+
+%size {
+  height: 16px;
+  width: 16px;
+  }
+
+// Animation Placeholders
+
+%grow {
+	transition: transform .2s ease-out;
+	transform-origin: 50% 50%;
+	transform: scale(1.2);
+}
