@@ -21,3 +21,37 @@
 		@extend %grow;
 	}
 }
+
+// Logo Animation 
+
+@keyframes pulse {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.2);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.logo-container {
+	#logo {
+		animation: pulse 1s ease-out;
+		
+		#paw {
+			transform-origin: 70px 70px;
+			animation: spin 1s linear;
+		}
+	}
+}
