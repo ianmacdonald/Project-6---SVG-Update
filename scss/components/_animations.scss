@@ -26,21 +26,39 @@
 
 @keyframes pulse {
 	0% {
+		-ms-transform: scale(1);
 		transform: scale(1);
 	}
 	50% {
+		-ms-transform: scale(1.2);
 		transform: scale(1.2);
 	}
 	100% {
+		-ms-transform: scale(1);
 		transform: scale(1);
 	}
 }
 
 @keyframes spin {
 	0% {
+		-ms-transform: rotate(0deg);
 		transform: rotate(0deg);
 	}
 	100% {
+		-ms-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+@-webkit-keyframes spin {
+	0% {
+		-ms-transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	100% {
+		-ms-transform: rotate(360deg);
+		-webkit-transform: rotate(360deg);
 		transform: rotate(360deg);
 	}
 }

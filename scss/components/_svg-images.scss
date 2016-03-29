@@ -57,11 +57,18 @@
 /** Media Queries **/
 
 @media only screen and (max-width: 420px) {
-  .st1-logo {
+  #logo-text {
     display: none;
   }
   #paw-print {
     display: block;
     margin: 0 auto;
+  }
+  #red,
+  #fawn,
+  #sable,
+  #black-tan {
+    width: 130px;
+    padding: 15px 5px;
   }
 }

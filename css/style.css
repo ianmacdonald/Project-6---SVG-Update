@@ -77,6 +77,7 @@ footer {
   padding-bottom: 30px;
   color: #ba8058; }
 
+/** Media Queries **/
 #container {
   max-width: 960px;
   background: #fff;
@@ -147,23 +148,44 @@ footer {
 
 /** Media Queries **/
 @media only screen and (max-width: 420px) {
-  .st1-logo {
+  #logo-text {
     display: none; }
 
   #paw-print {
     display: block;
-    margin: 0 auto; } }
+    margin: 0 auto; }
+
+  #red,
+  #fawn,
+  #sable,
+  #black-tan {
+    width: 130px;
+    padding: 15px 5px; } }
 @keyframes pulse {
   0% {
+    -ms-transform: scale(1);
     transform: scale(1); }
   50% {
+    -ms-transform: scale(1.2);
     transform: scale(1.2); }
   100% {
+    -ms-transform: scale(1);
     transform: scale(1); } }
 @keyframes spin {
   0% {
+    -ms-transform: rotate(0deg);
     transform: rotate(0deg); }
   100% {
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+@-webkit-keyframes spin {
+  0% {
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
     transform: rotate(360deg); } }
 .logo-container #logo {
   animation: pulse 1s ease-out; }
