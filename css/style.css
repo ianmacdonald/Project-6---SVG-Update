@@ -78,6 +78,9 @@ footer {
   color: #ba8058; }
 
 /** Media Queries **/
+@media only screen and (max-width: 420px) {
+  p {
+    padding: 0 10px; } }
 #container {
   max-width: 960px;
   background: #fff;
